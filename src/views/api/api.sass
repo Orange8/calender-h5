@@ -1,0 +1,90 @@
+.page
+  background: #fafafa
+
+.menu-button
+  z-index: 100
+  position: fixed
+  display: inline-block
+  top: 50%
+  left: 0
+  width: 20px
+  height: 40px
+  line-height: 40px
+  font-size: 14px
+  background: #ddd
+  border-top-right-radius: 6px
+  border-bottom-right-radius: 6px
+  font-weight: bolder
+  color: #fff
+  text-align: center
+  transform: translate3d(0, -50%, 0)
+  transition: .3s ease-out
+  &.open
+    left: 50%
+
+.menu-list
+  z-index: 101
+  position: fixed
+  display: inline-block
+  top: 0
+  left: -50%
+  width: 50%
+  height: 100%
+  font-size: 14px
+  background: #fff
+  transform: translate3d(0, 0%, 0)
+  transition: .3s ease-out
+  &.open
+    left: 0
+  ul
+    display: inline-block
+    width: 100%
+    padding: 0 5%
+    h5
+      margin-top: 10px
+    li
+      display: inline-block
+      width: 100%
+      padding: 6px 0 0 5%
+      list-style: none
+      font-size: 12px
+      color: #333
+
+.api-list
+  position: absolute
+  width: 100%
+  height: 100%
+  font-size: 14px
+  top: 0
+  left: 0
+  ul
+    display: inline-block
+    width: 100%
+    padding: 0 5%
+    h4
+      margin-top: 10px
+    li
+      display: inline-block
+      width: 100%
+      margin: 0 0 0 5%
+      padding: 4px 5% 4px 0
+      list-style: none
+      border-bottom: 1px solid #eee
+      h5
+        display: inline-block
+        width: 100%
+      label,span
+        display: inline-block
+        width: 100%
+        font-size: 12px
+        color: #333
+        word-break: break-all
+        text-align: justify
+      p
+        display: inline-block
+        width: 100%
+        font-size: 12px
+        color: #333
+        line-height: 1.5em
+        word-break: break-all
+        text-align: justify
